@@ -1,0 +1,72 @@
+﻿@model UturuAbiaNews.Models.Content
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Content</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContentTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ContentTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShortDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LongDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LongDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfLikes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoOfLikes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsEdited)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsEdited)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePublished)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DatePublished)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEdited)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateEdited)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
